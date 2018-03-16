@@ -17,6 +17,28 @@
 		9D191E62205B99E4007F8C6C /* DuoBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D191E61205B99E4007F8C6C /* DuoBook.swift */; };
 		9D191E64205B9A04007F8C6C /* DuoReaderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D191E63205B9A04007F8C6C /* DuoReaderConfig.swift */; };
 		9D191E6A205B9BAA007F8C6C /* DuoReaderFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D191E69205B9BAA007F8C6C /* DuoReaderFontSize.swift */; };
+		9D191E6D205BAEC3007F8C6C /* DuoReaderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D191E6C205BAEC3007F8C6C /* DuoReaderContainer.swift */; };
+		9D191E6F205BAECF007F8C6C /* DuoReaderCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D191E6E205BAECF007F8C6C /* DuoReaderCenter.swift */; };
+		9D191E71205BAEDA007F8C6C /* DuoReaderChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D191E70205BAEDA007F8C6C /* DuoReaderChapter.swift */; };
+		9D191E73205BAEEB007F8C6C /* DuoReaderChapterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D191E72205BAEEB007F8C6C /* DuoReaderChapterList.swift */; };
+		9D191E75205BAEF5007F8C6C /* DuoWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D191E74205BAEF5007F8C6C /* DuoWebView.swift */; };
+		9D191E77205BAF00007F8C6C /* DuoWKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D191E76205BAF00007F8C6C /* DuoWKWebView.swift */; };
+		9D191E83205BAFDC007F8C6C /* ProgressIndicator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D191E79205BAFDA007F8C6C /* ProgressIndicator.xib */; };
+		9D191E84205BAFDC007F8C6C /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D191E7A205BAFDA007F8C6C /* ProgressIndicator.swift */; };
+		9D191E85205BAFDC007F8C6C /* Reader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D191E7B205BAFDA007F8C6C /* Reader.storyboard */; };
+		9D191E86205BAFDC007F8C6C /* VerticalSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D191E7C205BAFDB007F8C6C /* VerticalSlider.swift */; };
+		9D191E87205BAFDC007F8C6C /* BottomMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D191E7D205BAFDB007F8C6C /* BottomMenu.xib */; };
+		9D191E88205BAFDC007F8C6C /* TopMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D191E7E205BAFDB007F8C6C /* TopMenu.swift */; };
+		9D191E89205BAFDC007F8C6C /* FontMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D191E7F205BAFDB007F8C6C /* FontMenu.swift */; };
+		9D191E8A205BAFDC007F8C6C /* FontMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D191E80205BAFDB007F8C6C /* FontMenu.xib */; };
+		9D191E8B205BAFDC007F8C6C /* TopMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D191E81205BAFDB007F8C6C /* TopMenu.xib */; };
+		9D191E8C205BAFDC007F8C6C /* BottomMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D191E82205BAFDB007F8C6C /* BottomMenu.swift */; };
+		9D191E93205BB0EB007F8C6C /* String_Encoding+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D191E8F205BB0EB007F8C6C /* String_Encoding+Extension.swift */; };
+		9D191E94205BB0EB007F8C6C /* Notification_Name+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D191E90205BB0EB007F8C6C /* Notification_Name+Extension.swift */; };
+		9D191E95205BB0EB007F8C6C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D191E91205BB0EB007F8C6C /* UIView+Extension.swift */; };
+		9D191E96205BB0EB007F8C6C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D191E92205BB0EB007F8C6C /* String+Extension.swift */; };
+		9D191E9A205BB180007F8C6C /* TxtBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D191E98205BB180007F8C6C /* TxtBook.swift */; };
+		9D191E9B205BB180007F8C6C /* Txt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D191E99205BB180007F8C6C /* Txt.swift */; };
 		9DA070B8205B59AF003DB6DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA070B7205B59AF003DB6DA /* AppDelegate.swift */; };
 		9DA070BA205B59AF003DB6DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA070B9205B59AF003DB6DA /* ViewController.swift */; };
 		9DA070BD205B59AF003DB6DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA070BB205B59AF003DB6DA /* Main.storyboard */; };
@@ -52,6 +74,28 @@
 		9D191E61205B99E4007F8C6C /* DuoBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoBook.swift; sourceTree = "<group>"; };
 		9D191E63205B9A04007F8C6C /* DuoReaderConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoReaderConfig.swift; sourceTree = "<group>"; };
 		9D191E69205B9BAA007F8C6C /* DuoReaderFontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoReaderFontSize.swift; sourceTree = "<group>"; };
+		9D191E6C205BAEC3007F8C6C /* DuoReaderContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoReaderContainer.swift; sourceTree = "<group>"; };
+		9D191E6E205BAECF007F8C6C /* DuoReaderCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoReaderCenter.swift; sourceTree = "<group>"; };
+		9D191E70205BAEDA007F8C6C /* DuoReaderChapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoReaderChapter.swift; sourceTree = "<group>"; };
+		9D191E72205BAEEB007F8C6C /* DuoReaderChapterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoReaderChapterList.swift; sourceTree = "<group>"; };
+		9D191E74205BAEF5007F8C6C /* DuoWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoWebView.swift; sourceTree = "<group>"; };
+		9D191E76205BAF00007F8C6C /* DuoWKWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoWKWebView.swift; sourceTree = "<group>"; };
+		9D191E79205BAFDA007F8C6C /* ProgressIndicator.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressIndicator.xib; sourceTree = "<group>"; };
+		9D191E7A205BAFDA007F8C6C /* ProgressIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
+		9D191E7B205BAFDA007F8C6C /* Reader.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Reader.storyboard; sourceTree = "<group>"; };
+		9D191E7C205BAFDB007F8C6C /* VerticalSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalSlider.swift; sourceTree = "<group>"; };
+		9D191E7D205BAFDB007F8C6C /* BottomMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BottomMenu.xib; sourceTree = "<group>"; };
+		9D191E7E205BAFDB007F8C6C /* TopMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenu.swift; sourceTree = "<group>"; };
+		9D191E7F205BAFDB007F8C6C /* FontMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontMenu.swift; sourceTree = "<group>"; };
+		9D191E80205BAFDB007F8C6C /* FontMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FontMenu.xib; sourceTree = "<group>"; };
+		9D191E81205BAFDB007F8C6C /* TopMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopMenu.xib; sourceTree = "<group>"; };
+		9D191E82205BAFDB007F8C6C /* BottomMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomMenu.swift; sourceTree = "<group>"; };
+		9D191E8F205BB0EB007F8C6C /* String_Encoding+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String_Encoding+Extension.swift"; sourceTree = "<group>"; };
+		9D191E90205BB0EB007F8C6C /* Notification_Name+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification_Name+Extension.swift"; sourceTree = "<group>"; };
+		9D191E91205BB0EB007F8C6C /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		9D191E92205BB0EB007F8C6C /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		9D191E98205BB180007F8C6C /* TxtBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TxtBook.swift; sourceTree = "<group>"; };
+		9D191E99205BB180007F8C6C /* Txt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Txt.swift; sourceTree = "<group>"; };
 		9DA070B4205B59AF003DB6DA /* DuoReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuoReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA070B7205B59AF003DB6DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DA070B9205B59AF003DB6DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +126,10 @@
 		9D191E5C205B9982007F8C6C /* Reader */ = {
 			isa = PBXGroup;
 			children = (
+				9D191E97205BB175007F8C6C /* Txt */,
+				9D191E8D205BB0D4007F8C6C /* Utils */,
+				9D191E78205BAFC4007F8C6C /* View */,
+				9D191E6B205BAE46007F8C6C /* Controller */,
 				9DA070CA205B5AB2003DB6DA /* Epub */,
 				9D191E5F205B99D9007F8C6C /* DuoReader.swift */,
 				9D191E61205B99E4007F8C6C /* DuoBook.swift */,
@@ -91,12 +139,70 @@
 			path = Reader;
 			sourceTree = "<group>";
 		};
+		9D191E6B205BAE46007F8C6C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9D191E6C205BAEC3007F8C6C /* DuoReaderContainer.swift */,
+				9D191E6E205BAECF007F8C6C /* DuoReaderCenter.swift */,
+				9D191E70205BAEDA007F8C6C /* DuoReaderChapter.swift */,
+				9D191E72205BAEEB007F8C6C /* DuoReaderChapterList.swift */,
+				9D191E74205BAEF5007F8C6C /* DuoWebView.swift */,
+				9D191E76205BAF00007F8C6C /* DuoWKWebView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9D191E78205BAFC4007F8C6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D191E82205BAFDB007F8C6C /* BottomMenu.swift */,
+				9D191E7D205BAFDB007F8C6C /* BottomMenu.xib */,
+				9D191E7F205BAFDB007F8C6C /* FontMenu.swift */,
+				9D191E80205BAFDB007F8C6C /* FontMenu.xib */,
+				9D191E7A205BAFDA007F8C6C /* ProgressIndicator.swift */,
+				9D191E79205BAFDA007F8C6C /* ProgressIndicator.xib */,
+				9D191E7B205BAFDA007F8C6C /* Reader.storyboard */,
+				9D191E7E205BAFDB007F8C6C /* TopMenu.swift */,
+				9D191E81205BAFDB007F8C6C /* TopMenu.xib */,
+				9D191E7C205BAFDB007F8C6C /* VerticalSlider.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D191E8D205BB0D4007F8C6C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9D191E8E205BB0DE007F8C6C /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9D191E8E205BB0DE007F8C6C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9D191E90205BB0EB007F8C6C /* Notification_Name+Extension.swift */,
+				9D191E92205BB0EB007F8C6C /* String+Extension.swift */,
+				9D191E8F205BB0EB007F8C6C /* String_Encoding+Extension.swift */,
+				9D191E91205BB0EB007F8C6C /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9D191E97205BB175007F8C6C /* Txt */ = {
+			isa = PBXGroup;
+			children = (
+				9D191E99205BB180007F8C6C /* Txt.swift */,
+				9D191E98205BB180007F8C6C /* TxtBook.swift */,
+			);
+			path = Txt;
+			sourceTree = "<group>";
+		};
 		9DA070AB205B59AE003DB6DA = {
 			isa = PBXGroup;
 			children = (
-				9DA070DD205B6807003DB6DA /* Frameworks */,
 				9DA070B6205B59AF003DB6DA /* DuoReader */,
 				9DA070B5205B59AF003DB6DA /* Products */,
+				9DA070DD205B6807003DB6DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,9 +219,9 @@
 			children = (
 				9D191E5C205B9982007F8C6C /* Reader */,
 				9DA070C9205B5AA9003DB6DA /* Controller */,
-				9DA070B7205B59AF003DB6DA /* AppDelegate.swift */,
 				9DA070B9205B59AF003DB6DA /* ViewController.swift */,
 				9DA070BB205B59AF003DB6DA /* Main.storyboard */,
+				9DA070B7205B59AF003DB6DA /* AppDelegate.swift */,
 				9DA070BE205B59AF003DB6DA /* Assets.xcassets */,
 				9DA070C0205B59AF003DB6DA /* LaunchScreen.storyboard */,
 				9DA070C3205B59AF003DB6DA /* Info.plist */,
@@ -211,9 +317,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D191E83205BAFDC007F8C6C /* ProgressIndicator.xib in Resources */,
+				9D191E87205BAFDC007F8C6C /* BottomMenu.xib in Resources */,
+				9D191E8A205BAFDC007F8C6C /* FontMenu.xib in Resources */,
 				9DA070C2205B59AF003DB6DA /* LaunchScreen.storyboard in Resources */,
+				9D191E8B205BAFDC007F8C6C /* TopMenu.xib in Resources */,
 				9DA070BF205B59AF003DB6DA /* Assets.xcassets in Resources */,
 				9DA070BD205B59AF003DB6DA /* Main.storyboard in Resources */,
+				9D191E85205BAFDC007F8C6C /* Reader.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,16 +335,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D191E77205BAF00007F8C6C /* DuoWKWebView.swift in Sources */,
 				9DA070CE205B5B2F003DB6DA /* EpubBook.swift in Sources */,
 				9D191E60205B99D9007F8C6C /* DuoReader.swift in Sources */,
+				9D191E71205BAEDA007F8C6C /* DuoReaderChapter.swift in Sources */,
 				9DA070CC205B5B07003DB6DA /* Epub.swift in Sources */,
+				9D191E89205BAFDC007F8C6C /* FontMenu.swift in Sources */,
 				9D191E62205B99E4007F8C6C /* DuoBook.swift in Sources */,
+				9D191E93205BB0EB007F8C6C /* String_Encoding+Extension.swift in Sources */,
+				9D191E96205BB0EB007F8C6C /* String+Extension.swift in Sources */,
 				9DA070BA205B59AF003DB6DA /* ViewController.swift in Sources */,
+				9D191E88205BAFDC007F8C6C /* TopMenu.swift in Sources */,
 				9DA070B8205B59AF003DB6DA /* AppDelegate.swift in Sources */,
 				9DA070D0205B5BA0003DB6DA /* EpubParser.swift in Sources */,
+				9D191E84205BAFDC007F8C6C /* ProgressIndicator.swift in Sources */,
+				9D191E8C205BAFDC007F8C6C /* BottomMenu.swift in Sources */,
+				9D191E6D205BAEC3007F8C6C /* DuoReaderContainer.swift in Sources */,
+				9D191E73205BAEEB007F8C6C /* DuoReaderChapterList.swift in Sources */,
+				9D191E75205BAEF5007F8C6C /* DuoWebView.swift in Sources */,
+				9D191E6F205BAECF007F8C6C /* DuoReaderCenter.swift in Sources */,
+				9D191E95205BB0EB007F8C6C /* UIView+Extension.swift in Sources */,
+				9D191E86205BAFDC007F8C6C /* VerticalSlider.swift in Sources */,
 				9D191E64205B9A04007F8C6C /* DuoReaderConfig.swift in Sources */,
+				9D191E94205BB0EB007F8C6C /* Notification_Name+Extension.swift in Sources */,
 				9DA070D2205B5BC1003DB6DA /* EpubResource.swift in Sources */,
+				9D191E9B205BB180007F8C6C /* Txt.swift in Sources */,
 				9D191E6A205B9BAA007F8C6C /* DuoReaderFontSize.swift in Sources */,
+				9D191E9A205BB180007F8C6C /* TxtBook.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

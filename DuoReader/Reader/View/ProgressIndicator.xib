@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProgressIndicator" customModule="DeerPark" customModuleProvider="target">
+            <connections>
+                <outlet property="chapterNameLabel" destination="S9Z-SR-27k" id="2YX-ZQ-s6O"/>
+                <outlet property="chapterProgressLabel" destination="pTY-2c-c9k" id="fKT-Oq-aJF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="294" height="135"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJv-44-Htn">
+                    <rect key="frame" x="0.0" y="0.0" width="294" height="135"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MAN-kg-S8M">
+                            <rect key="frame" x="91.5" y="35" width="111" height="65"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chapter Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9Z-SR-27k">
+                                    <rect key="frame" x="0.0" y="0.0" width="111" height="32.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTY-2c-c9k">
+                                    <rect key="frame" x="44" y="32.5" width="23.5" height="32.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="65" id="aqR-I0-ch7"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.74312392979452058" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="MAN-kg-S8M" firstAttribute="centerY" secondItem="aJv-44-Htn" secondAttribute="centerY" id="7hl-BZ-4eB"/>
+                        <constraint firstItem="MAN-kg-S8M" firstAttribute="centerX" secondItem="aJv-44-Htn" secondAttribute="centerX" id="pJ4-dN-TH6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="aJv-44-Htn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="25E-A0-CpK"/>
+                <constraint firstItem="aJv-44-Htn" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="RaI-XP-b0h"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="aJv-44-Htn" secondAttribute="trailing" id="rVV-N2-Jcf"/>
+                <constraint firstItem="aJv-44-Htn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="sya-oE-kRH"/>
+                <constraint firstItem="aJv-44-Htn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tJM-vh-XpY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="20"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-7" y="144.5"/>
+        </view>
+    </objects>
+</document>

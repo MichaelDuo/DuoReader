@@ -22,10 +22,10 @@ class DPReader: NSObject {
         return supportedSufix.contains(suffix)
     }
     
-    func presentReader(parentViewController: UIViewController, forBook: DPBookMO, andConfig config: DPReaderConfig, animated: Bool = true) {
+    func presentReader(parentViewController: UIViewController, andConfig config: DPReaderConfig, animated: Bool = true) {
         
-        let epubURL = forBook.assetAbsURL!
-        let type    = forBook.type!
+        let epubURL = URL(string: "test")! // forBook.assetAbsURL!
+        let type    = "epub" // forBook.type!
         
         readerContainer = DPReaderContainer(withConfig: config, dpReader: self, epubURL: epubURL, type: type)
         readerContainer.ready {

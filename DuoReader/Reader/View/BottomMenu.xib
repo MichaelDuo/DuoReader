@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BottomMenu" customModule="DeerPark" customModuleProvider="target">
+            <connections>
+                <outlet property="pageSlider" destination="KFn-Ve-e7a" id="sVt-j4-f9D"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="179"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lel-iV-WZd">
+                    <rect key="frame" x="0.0" y="0.0" width="326" height="179"/>
+                    <subviews>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KFn-Ve-e7a">
+                            <rect key="frame" x="18" y="99" width="290" height="31"/>
+                            <color key="minimumTrackTintColor" red="0.59434486040609136" green="0.59434486040609136" blue="0.59434486040609136" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="maximumTrackTintColor" red="0.99087880710659904" green="0.99087880710659904" blue="0.99087880710659904" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="thumbTintColor" red="0.84662515862944165" green="0.84662515862944165" blue="0.84662515862944165" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="sliderValueChanged:" destination="-1" eventType="valueChanged" id="6yo-PF-Lhw"/>
+                                <action selector="touchDown" destination="-1" eventType="touchDown" id="Tvs-1P-F95"/>
+                                <action selector="touchUp" destination="-1" eventType="touchUpOutside" id="1Kg-kr-AAI"/>
+                                <action selector="touchUp" destination="-1" eventType="touchUpInside" id="jQb-8X-duA"/>
+                            </connections>
+                        </slider>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="X2P-8c-hHk">
+                            <rect key="frame" x="0.0" y="139" width="326" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3Z-96-Qct">
+                                    <rect key="frame" x="0.0" y="0.0" width="75.5" height="30"/>
+                                    <state key="normal" image="index"/>
+                                    <connections>
+                                        <action selector="showIndex" destination="-1" eventType="touchUpInside" id="Z9F-Tu-1XR"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQM-Xl-O1T">
+                                    <rect key="frame" x="83.5" y="0.0" width="75.5" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <state key="normal" image="eye"/>
+                                    <connections>
+                                        <action selector="switchVH" destination="-1" eventType="touchUpInside" id="wOQ-Va-Fgw"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lph-23-mMz">
+                                    <rect key="frame" x="167" y="0.0" width="75.5" height="30"/>
+                                    <state key="normal" title="A+">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="increaseFontSize" destination="-1" eventType="touchUpInside" id="p54-lj-JwB"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uks-ai-8hr">
+                                    <rect key="frame" x="250.5" y="0.0" width="75.5" height="30"/>
+                                    <state key="normal" title="A-">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="decreaseFontSize" destination="-1" eventType="touchUpInside" id="tRd-dm-SW0"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Klz-8h-u1R"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.22971526015228427" green="0.22971526015228427" blue="0.22971526015228427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="X2P-8c-hHk" secondAttribute="bottom" constant="10" id="DSd-cL-f0X"/>
+                        <constraint firstItem="X2P-8c-hHk" firstAttribute="top" secondItem="KFn-Ve-e7a" secondAttribute="bottom" constant="10" id="FwY-Dj-Dfb"/>
+                        <constraint firstItem="KFn-Ve-e7a" firstAttribute="leading" secondItem="lel-iV-WZd" secondAttribute="leading" constant="20" id="Lbp-zr-uVX"/>
+                        <constraint firstAttribute="trailing" secondItem="X2P-8c-hHk" secondAttribute="trailing" id="Zyv-Vi-moM"/>
+                        <constraint firstItem="X2P-8c-hHk" firstAttribute="leading" secondItem="lel-iV-WZd" secondAttribute="leading" id="aDs-Kn-POt"/>
+                        <constraint firstAttribute="trailing" secondItem="KFn-Ve-e7a" secondAttribute="trailing" constant="20" id="xES-U0-Wcg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="lel-iV-WZd" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Uc1-LF-y13"/>
+                <constraint firstItem="lel-iV-WZd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="kFL-so-z8G"/>
+                <constraint firstItem="lel-iV-WZd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="rRY-fN-fb0"/>
+                <constraint firstItem="lel-iV-WZd" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="xaY-KB-okX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="24" y="-144.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="eye" width="20" height="20"/>
+        <image name="index" width="20" height="12"/>
+    </resources>
+</document>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reader Chapter List-->
+        <scene sceneID="K0s-jd-zZu">
+            <objects>
+                <viewController storyboardIdentifier="ChapterList" id="THd-Hq-wgt" customClass="DPReaderChapterList" customModule="DeerPark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XgH-u8-m3Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOJ-4s-zrq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTz-kR-apr">
+                                        <rect key="frame" x="305" y="25" width="55" height="30"/>
+                                        <state key="normal" title="Resume"/>
+                                        <connections>
+                                            <action selector="backButtonClick:" destination="THd-Hq-wgt" eventType="touchUpInside" id="Ndy-Mf-WN8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="NTz-kR-apr" secondAttribute="trailing" constant="15" id="FxK-HW-Et6"/>
+                                    <constraint firstAttribute="height" constant="70" id="JXU-31-rpH"/>
+                                    <constraint firstItem="NTz-kR-apr" firstAttribute="top" secondItem="cOJ-4s-zrq" secondAttribute="top" constant="25" id="tOP-XB-d5v"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xfY-PH-Fnb">
+                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="THd-Hq-wgt" id="HTU-ei-dNH"/>
+                                    <outlet property="delegate" destination="THd-Hq-wgt" id="sHI-FC-nnL"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xfY-PH-Fnb" firstAttribute="trailing" secondItem="phW-lE-EYx" secondAttribute="trailing" id="GBQ-XY-Nfz"/>
+                            <constraint firstItem="cOJ-4s-zrq" firstAttribute="trailing" secondItem="phW-lE-EYx" secondAttribute="trailing" id="K2N-0b-Fqq"/>
+                            <constraint firstItem="xfY-PH-Fnb" firstAttribute="leading" secondItem="phW-lE-EYx" secondAttribute="leading" id="h97-PN-XYM"/>
+                            <constraint firstItem="cOJ-4s-zrq" firstAttribute="top" secondItem="XgH-u8-m3Y" secondAttribute="top" id="iVO-wa-4Jl"/>
+                            <constraint firstItem="cOJ-4s-zrq" firstAttribute="leading" secondItem="phW-lE-EYx" secondAttribute="leading" id="mtK-lE-Z5z"/>
+                            <constraint firstAttribute="bottom" secondItem="xfY-PH-Fnb" secondAttribute="bottom" id="nr5-sW-m4z"/>
+                            <constraint firstItem="xfY-PH-Fnb" firstAttribute="top" secondItem="cOJ-4s-zrq" secondAttribute="bottom" id="xvK-c1-4L7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="phW-lE-EYx"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="NTz-kR-apr" id="I9d-gX-ADm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5rX-hj-XHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="655.5" y="1151.5"/>
+        </scene>
+        <!--DeerPark Reader-->
+        <scene sceneID="I2i-GF-b2q">
+            <objects>
+                <viewController storyboardIdentifier="CenterViewController" id="02B-V5-1XT" customClass="DPReaderCenter" customModule="DeerPark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9PH-Ya-DQ7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fs0-jl-drT">
+                                <rect key="frame" x="319" y="634" width="21" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.31886500634517767" green="0.31886500634517767" blue="0.31886500634517767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ArZ-j9-Jll" customClass="BottomMenu" customModule="DeerPark" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="576" width="375" height="91"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="hTr-AZ-hEJ"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4UK-CN-k4i" customClass="ProgressIndicator" customModule="DeerPark" customModuleProvider="target">
+                                <rect key="frame" x="67" y="421" width="240" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="n3B-zC-aJa"/>
+                                    <constraint firstAttribute="width" constant="240" id="nmV-t3-mpe"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afL-a7-bpN" customClass="TopMenu" customModule="DeerPark" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="03p-rc-FFF"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ic7-B8-ZzD" userLabel="Bottom Area">
+                                <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
+                                <color key="backgroundColor" red="0.23137254901960785" green="0.23137254901960785" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uhl-xM-JfI" userLabel="Top Area">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8ww-rb-rYS" firstAttribute="trailing" secondItem="fs0-jl-drT" secondAttribute="trailing" constant="35" id="4C2-p7-cY1"/>
+                            <constraint firstAttribute="bottom" secondItem="Ic7-B8-ZzD" secondAttribute="bottom" id="7zh-AM-Zhq"/>
+                            <constraint firstItem="afL-a7-bpN" firstAttribute="top" secondItem="8ww-rb-rYS" secondAttribute="top" id="9DA-gh-yx5"/>
+                            <constraint firstItem="8ww-rb-rYS" firstAttribute="bottom" secondItem="ArZ-j9-Jll" secondAttribute="bottom" id="B0B-os-y1n"/>
+                            <constraint firstItem="Uhl-xM-JfI" firstAttribute="leading" secondItem="9PH-Ya-DQ7" secondAttribute="leading" id="B1X-80-b92"/>
+                            <constraint firstItem="afL-a7-bpN" firstAttribute="top" secondItem="Uhl-xM-JfI" secondAttribute="bottom" id="DEk-p4-fLi"/>
+                            <constraint firstItem="Ic7-B8-ZzD" firstAttribute="top" secondItem="ArZ-j9-Jll" secondAttribute="bottom" id="HOu-JG-q8y"/>
+                            <constraint firstItem="ArZ-j9-Jll" firstAttribute="top" secondItem="4UK-CN-k4i" secondAttribute="bottom" constant="55" id="IkO-Nh-UXd"/>
+                            <constraint firstItem="8ww-rb-rYS" firstAttribute="bottom" secondItem="fs0-jl-drT" secondAttribute="bottom" constant="15" id="JLK-GT-53V"/>
+                            <constraint firstAttribute="trailing" secondItem="Ic7-B8-ZzD" secondAttribute="trailing" id="Nti-cO-uN4"/>
+                            <constraint firstItem="Uhl-xM-JfI" firstAttribute="top" secondItem="9PH-Ya-DQ7" secondAttribute="top" id="VXF-2l-Kuz"/>
+                            <constraint firstItem="8ww-rb-rYS" firstAttribute="trailing" secondItem="ArZ-j9-Jll" secondAttribute="trailing" id="agg-s0-PeP"/>
+                            <constraint firstItem="afL-a7-bpN" firstAttribute="leading" secondItem="8ww-rb-rYS" secondAttribute="leading" id="ayH-8m-HpQ"/>
+                            <constraint firstItem="Ic7-B8-ZzD" firstAttribute="leading" secondItem="9PH-Ya-DQ7" secondAttribute="leading" id="efy-us-TTc"/>
+                            <constraint firstItem="ArZ-j9-Jll" firstAttribute="leading" secondItem="8ww-rb-rYS" secondAttribute="leading" id="jBv-9a-xew"/>
+                            <constraint firstItem="afL-a7-bpN" firstAttribute="trailing" secondItem="8ww-rb-rYS" secondAttribute="trailing" id="laj-hw-TxB"/>
+                            <constraint firstItem="4UK-CN-k4i" firstAttribute="centerX" secondItem="8ww-rb-rYS" secondAttribute="centerX" id="pWo-60-o8a"/>
+                            <constraint firstAttribute="trailing" secondItem="Uhl-xM-JfI" secondAttribute="trailing" id="soH-1f-oa1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8ww-rb-rYS"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="DeerPark Reader" id="oBl-OI-Jc8"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="bottomArea" destination="Ic7-B8-ZzD" id="ued-eT-6dq"/>
+                        <outlet property="bottomMenu" destination="ArZ-j9-Jll" id="hY9-Y1-06J"/>
+                        <outlet property="progressIndicator" destination="4UK-CN-k4i" id="WAu-QM-UAI"/>
+                        <outlet property="progressLabel" destination="fs0-jl-drT" id="GIS-cD-hLI"/>
+                        <outlet property="topArea" destination="Uhl-xM-JfI" id="Bvn-zk-twy"/>
+                        <outlet property="topMenu" destination="afL-a7-bpN" id="jNw-dW-QBN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J44-0w-u6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="103.5" y="1153.4782608695652"/>
+        </scene>
+    </scenes>
+</document>
