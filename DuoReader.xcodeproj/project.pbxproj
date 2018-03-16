@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9DA070B8205B59AF003DB6DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA070B7205B59AF003DB6DA /* AppDelegate.swift */; };
+		9DA070BA205B59AF003DB6DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA070B9205B59AF003DB6DA /* ViewController.swift */; };
+		9DA070BD205B59AF003DB6DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA070BB205B59AF003DB6DA /* Main.storyboard */; };
+		9DA070BF205B59AF003DB6DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA070BE205B59AF003DB6DA /* Assets.xcassets */; };
+		9DA070C2205B59AF003DB6DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA070C0205B59AF003DB6DA /* LaunchScreen.storyboard */; };
+		9DA070CC205B5B07003DB6DA /* Epub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA070CB205B5B07003DB6DA /* Epub.swift */; };
+		9DA070CE205B5B2F003DB6DA /* EpubBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA070CD205B5B2F003DB6DA /* EpubBook.swift */; };
+		9DA070D0205B5BA0003DB6DA /* EpubParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA070CF205B5BA0003DB6DA /* EpubParser.swift */; };
+		9DA070D2205B5BC1003DB6DA /* EpubResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA070D1205B5BC1003DB6DA /* EpubResource.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9DA070B4205B59AF003DB6DA /* DuoReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuoReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA070B7205B59AF003DB6DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9DA070B9205B59AF003DB6DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9DA070BC205B59AF003DB6DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9DA070BE205B59AF003DB6DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DA070C1205B59AF003DB6DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9DA070C3205B59AF003DB6DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DA070CB205B5B07003DB6DA /* Epub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Epub.swift; sourceTree = "<group>"; };
+		9DA070CD205B5B2F003DB6DA /* EpubBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpubBook.swift; sourceTree = "<group>"; };
+		9DA070CF205B5BA0003DB6DA /* EpubParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpubParser.swift; sourceTree = "<group>"; };
+		9DA070D1205B5BC1003DB6DA /* EpubResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpubResource.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DA070B1205B59AF003DB6DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9DA070AB205B59AE003DB6DA = {
+			isa = PBXGroup;
+			children = (
+				9DA070B6205B59AF003DB6DA /* DuoReader */,
+				9DA070B5205B59AF003DB6DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9DA070B5205B59AF003DB6DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DA070B4205B59AF003DB6DA /* DuoReader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DA070B6205B59AF003DB6DA /* DuoReader */ = {
+			isa = PBXGroup;
+			children = (
+				9DA070CA205B5AB2003DB6DA /* Epub */,
+				9DA070C9205B5AA9003DB6DA /* Controller */,
+				9DA070B7205B59AF003DB6DA /* AppDelegate.swift */,
+				9DA070B9205B59AF003DB6DA /* ViewController.swift */,
+				9DA070BB205B59AF003DB6DA /* Main.storyboard */,
+				9DA070BE205B59AF003DB6DA /* Assets.xcassets */,
+				9DA070C0205B59AF003DB6DA /* LaunchScreen.storyboard */,
+				9DA070C3205B59AF003DB6DA /* Info.plist */,
+			);
+			path = DuoReader;
+			sourceTree = "<group>";
+		};
+		9DA070C9205B5AA9003DB6DA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9DA070CA205B5AB2003DB6DA /* Epub */ = {
+			isa = PBXGroup;
+			children = (
+				9DA070CB205B5B07003DB6DA /* Epub.swift */,
+				9DA070CD205B5B2F003DB6DA /* EpubBook.swift */,
+				9DA070CF205B5BA0003DB6DA /* EpubParser.swift */,
+				9DA070D1205B5BC1003DB6DA /* EpubResource.swift */,
+			);
+			path = Epub;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DA070B3205B59AF003DB6DA /* DuoReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DA070C6205B59AF003DB6DA /* Build configuration list for PBXNativeTarget "DuoReader" */;
+			buildPhases = (
+				9DA070B0205B59AF003DB6DA /* Sources */,
+				9DA070B1205B59AF003DB6DA /* Frameworks */,
+				9DA070B2205B59AF003DB6DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DuoReader;
+			productName = DuoReader;
+			productReference = 9DA070B4205B59AF003DB6DA /* DuoReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DA070AC205B59AE003DB6DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = MichaelDuo;
+				TargetAttributes = {
+					9DA070B3205B59AF003DB6DA = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9DA070AF205B59AE003DB6DA /* Build configuration list for PBXProject "DuoReader" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9DA070AB205B59AE003DB6DA;
+			productRefGroup = 9DA070B5205B59AF003DB6DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DA070B3205B59AF003DB6DA /* DuoReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DA070B2205B59AF003DB6DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA070C2205B59AF003DB6DA /* LaunchScreen.storyboard in Resources */,
+				9DA070BF205B59AF003DB6DA /* Assets.xcassets in Resources */,
+				9DA070BD205B59AF003DB6DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DA070B0205B59AF003DB6DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA070CE205B5B2F003DB6DA /* EpubBook.swift in Sources */,
+				9DA070CC205B5B07003DB6DA /* Epub.swift in Sources */,
+				9DA070BA205B59AF003DB6DA /* ViewController.swift in Sources */,
+				9DA070B8205B59AF003DB6DA /* AppDelegate.swift in Sources */,
+				9DA070D0205B5BA0003DB6DA /* EpubParser.swift in Sources */,
+				9DA070D2205B5BC1003DB6DA /* EpubResource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9DA070BB205B59AF003DB6DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DA070BC205B59AF003DB6DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9DA070C0205B59AF003DB6DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DA070C1205B59AF003DB6DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9DA070C4205B59AF003DB6DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9DA070C5205B59AF003DB6DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9DA070C7205B59AF003DB6DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZK6FRT9SAB;
+				INFOPLIST_FILE = DuoReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MichaelDuo.DuoReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9DA070C8205B59AF003DB6DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZK6FRT9SAB;
+				INFOPLIST_FILE = DuoReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MichaelDuo.DuoReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DA070AF205B59AE003DB6DA /* Build configuration list for PBXProject "DuoReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DA070C4205B59AF003DB6DA /* Debug */,
+				9DA070C5205B59AF003DB6DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DA070C6205B59AF003DB6DA /* Build configuration list for PBXNativeTarget "DuoReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DA070C7205B59AF003DB6DA /* Debug */,
+				9DA070C8205B59AF003DB6DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9DA070AC205B59AE003DB6DA /* Project object */;
+}
