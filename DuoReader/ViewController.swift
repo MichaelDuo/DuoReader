@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func DemoButtonClick(_ sender: Any) {
+        let EpubURL = Bundle.main.url(forResource: "The Silver Chair", withExtension: "epub")
+        DPReader().presentReader(parentViewController: self, withFileUrl: EpubURL!, andConfig: DPReaderConfig())
+    }
+    
 }
 

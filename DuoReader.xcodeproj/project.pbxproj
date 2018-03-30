@@ -39,6 +39,7 @@
 		9D191E96205BB0EB007F8C6C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D191E92205BB0EB007F8C6C /* String+Extension.swift */; };
 		9D191E9A205BB180007F8C6C /* TxtBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D191E98205BB180007F8C6C /* TxtBook.swift */; };
 		9D191E9B205BB180007F8C6C /* Txt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D191E99205BB180007F8C6C /* Txt.swift */; };
+		9D81E05D206C889400F38288 /* The Silver Chair.epub in Resources */ = {isa = PBXBuildFile; fileRef = 9D81E05C206C857D00F38288 /* The Silver Chair.epub */; };
 		9DA070B8205B59AF003DB6DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA070B7205B59AF003DB6DA /* AppDelegate.swift */; };
 		9DA070BA205B59AF003DB6DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA070B9205B59AF003DB6DA /* ViewController.swift */; };
 		9DA070BD205B59AF003DB6DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA070BB205B59AF003DB6DA /* Main.storyboard */; };
@@ -96,6 +97,7 @@
 		9D191E92205BB0EB007F8C6C /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		9D191E98205BB180007F8C6C /* TxtBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TxtBook.swift; sourceTree = "<group>"; };
 		9D191E99205BB180007F8C6C /* Txt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Txt.swift; sourceTree = "<group>"; };
+		9D81E05C206C857D00F38288 /* The Silver Chair.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Silver Chair.epub"; sourceTree = "<group>"; };
 		9DA070B4205B59AF003DB6DA /* DuoReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuoReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA070B7205B59AF003DB6DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DA070B9205B59AF003DB6DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +199,14 @@
 			path = Txt;
 			sourceTree = "<group>";
 		};
+		9D81E05B206C854700F38288 /* SampleBook */ = {
+			isa = PBXGroup;
+			children = (
+				9D81E05C206C857D00F38288 /* The Silver Chair.epub */,
+			);
+			path = SampleBook;
+			sourceTree = "<group>";
+		};
 		9DA070AB205B59AE003DB6DA = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +227,7 @@
 		9DA070B6205B59AF003DB6DA /* DuoReader */ = {
 			isa = PBXGroup;
 			children = (
+				9D81E05B206C854700F38288 /* SampleBook */,
 				9D191E5C205B9982007F8C6C /* Reader */,
 				9DA070C9205B5AA9003DB6DA /* Controller */,
 				9DA070B9205B59AF003DB6DA /* ViewController.swift */,
@@ -325,6 +336,7 @@
 				9DA070BF205B59AF003DB6DA /* Assets.xcassets in Resources */,
 				9DA070BD205B59AF003DB6DA /* Main.storyboard in Resources */,
 				9D191E85205BAFDC007F8C6C /* Reader.storyboard in Resources */,
+				9D81E05D206C889400F38288 /* The Silver Chair.epub in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
